@@ -1,3 +1,33 @@
+  143  git checkout quick-test
+  144  git checkout master
+  145  git checkout quick-test
+  146  git status
+  147  git commit -am "added World paragraph"
+  148  git checkout quick-test
+  149  git status
+  150  git checkout master
+  151  git status
+  152  git checkout quick-test
+  153  git commit -am "added World paragraph"
+  154  git checkout master
+  155  git status
+  156  git commit -am "added paragraph there"
+  157  git checkout quick-test
+  158  git diff
+  159  git diff master
+  160  git merge master
+  161  git status
+  162  git commit -am "updated with master"
+  163  git status
+  164  git checkout master
+  165  git checkout quick-test
+  166  git commit -am "index.html updated"
+  167  git checkout quick-test
+  168  git log
+  169  git reset 9b1d75015b0402d6cc595c56209769cf8fecba33
+  170  git status
+  171  git commit am "reinstating readme and index changes"
+  172  git status
   173  git restore
   174  git restore README.md
   175  git restore index.html
@@ -13,38 +43,8 @@
   185  git config --global user.name "Boris Dudkin"
   186  git config --gloabl user.name
   187  git config --global user.name
-  188  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Challenge_2/Starter_Code/FinTech_Module2_LoanQualifier
-  189  conda activate dev
-  190  git status
-  191  git add README.md
-  192  git commit -m "README.md Usage section updated"
-  193  history 50 > terminal_history.txt
-  194  git status
-  195  git add terminal_history.txt
-  196  git status
-  197  git commit -m "terminal_history.txt re-run"
-  198  git push
-  199  python app.py
-  200  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Class_2_Activities/02_Adding_questionary_to_Loan_Qualifier/Unsolved
-  201  python app.py
-  202  python app.py
-  203  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Challenge_2/Starter_Code/FinTech_Module2_LoanQualifier
-  204  python app2.py
-  205  python app2.py
-  206  python app2.py
-  207  python app2.py
-  208  python app.py
-  209  python app.py
-  210  python app.py
-  211  python app.py
-  212  python app.py
-  213  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Class_2_Activities/01_Adding_Fire_to_the_Loan_Qualifier_App/Unsolved
-  214  python app.py
-  215  python app.py
-  216  python app_withClass.py
-  217  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Challenge_2/Starter_Code/FinTech_Module2_LoanQualifier
-  218  python app.py
-  219  python app.py
-  220  git status
-  221  git add .
-  222  history 50 > terminal_history.txt
+  188  C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Challenge_2/Starter_Code/FinTech_Module2_LoanQualifier
+  189  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Challenge_2/Starter_Code/FinTech_Module2_LoanQualifier
+  190  conda activate dev
+  191  python app.py
+  192  history 50 > terminal_history.txt
