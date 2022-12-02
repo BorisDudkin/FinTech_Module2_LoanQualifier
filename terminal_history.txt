@@ -1,0 +1,50 @@
+  143  git checkout quick-test
+  144  git checkout master
+  145  git checkout quick-test
+  146  git status
+  147  git commit -am "added World paragraph"
+  148  git checkout quick-test
+  149  git status
+  150  git checkout master
+  151  git status
+  152  git checkout quick-test
+  153  git commit -am "added World paragraph"
+  154  git checkout master
+  155  git status
+  156  git commit -am "added paragraph there"
+  157  git checkout quick-test
+  158  git diff
+  159  git diff master
+  160  git merge master
+  161  git status
+  162  git commit -am "updated with master"
+  163  git status
+  164  git checkout master
+  165  git checkout quick-test
+  166  git commit -am "index.html updated"
+  167  git checkout quick-test
+  168  git log
+  169  git reset 9b1d75015b0402d6cc595c56209769cf8fecba33
+  170  git status
+  171  git commit am "reinstating readme and index changes"
+  172  git status
+  173  git restore
+  174  git restore README.md
+  175  git restore index.html
+  176  git status
+  177  git merge master
+  178  git checkout master
+  179  git push
+  180  git push
+  181  git checkout master
+  182  git branch
+  183  git branch -d quick-test
+  184  git branch
+  185  git config --global user.name "Boris Dudkin"
+  186  git config --gloabl user.name
+  187  git config --global user.name
+  188  history 50 > terminal_history.txt
+  189  pwd
+  190  cd C:/Users/boris/OneDrive/Documents/Studies/ColumbiaBootCamp/FinTech-Workspace/Module_2/Challenge_2/Starter_Code/FinTech_Module2_LoanQualifier
+  191  conda activate dev
+  192  history 50 > terminal_history.txt
