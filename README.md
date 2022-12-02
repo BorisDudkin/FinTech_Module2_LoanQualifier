@@ -55,8 +55,19 @@ pip install questionary
 
 ## Usage
 
-To use the application launch it from your terminal. <br />
-Once the app is launched, a number of questions relating to the loan application will appear on the screen. Your answers to those questions will serve as filters to the list of loan providers. <br />
+Clone the Repository
+
+- Open a terminal window and use `cd` commands to navigate to the directory where you would like to save your repository.
+
+- Use the `git clone` command and the link you copied previously to clone the repository in the location you selected.
+
+To use the application, launch it from your terminal: <br />
+
+```python
+python app.py
+```
+
+Once the tool is launched, a number of questions relating to the loan application will appear on the screen. Your answers to those questions will serve as filters to the list of loan providers. <br />
 NOTE: the path requested by the prompt messages is to the data file containg the list of loan providers. <br />
 
 ![terminal](images/Terminal_No.PNG)
