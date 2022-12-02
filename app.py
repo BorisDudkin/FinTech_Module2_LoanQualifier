@@ -114,12 +114,12 @@ def save_qualifying_loans(qualifying_loans):
         sys.exit("No results will be saved!")
     else:
         if len(qualifying_loans) == 0:
-            sys.exit("No qulifying loan providers available for this loan!")
+            sys.exit("No qulifying loan providers available for this loan! Results will not be saved")
         else:
             no_path = True
             while no_path:
-                csvpath = questionary.path("Path for the output file and the file name (in .csv format").ask()
-                if csvpath[-4:0] == ".csv":
+                csvpath = questionary.path("Path for the output file and the file name (in .csv format)").ask()
+                if csvpath[-4:] == ".csv":
                     no_path = False
                     save_csv(csvpath, qualifying_loans)
                 else:

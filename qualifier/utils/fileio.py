@@ -31,7 +31,7 @@ def load_csv(csvpath):
 
 
 
-def save_csv(csvpath, data, header=None):
+def save_csv(csvpath, data, header=["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]):
     """Saves the CSV file from path provided.
 
     Args:
