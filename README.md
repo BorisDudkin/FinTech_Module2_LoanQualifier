@@ -1,6 +1,6 @@
 # **Loan Qualifier**
 
-## Loan qualifier is an interactive tool that allows users to identify loan providers, for which a loan applicant would be eligible based on the applicant's credit score, debt-to-income ratio and loan-to-value ratio, as well as the requested loan size.
+### Loan qualifier is an interactive tool that allows users to identify loan providers, for which a loan applicant would be eligible based on the applicant's credit score, debt-to-income ratio and loan-to-value ratio, as well as the requested loan size.
 
 ---
 
@@ -8,11 +8,21 @@
 
 ---
 
+## Table of contents
+
+1. [Technologies](#technologies)
+2. [Installation Guide](#installation-guide)
+3. [Usage](#usage)
+4. [Contributors](#contributors)
+5. [License](#license)
+
+---
+
 ## Technologies
 
 `Python 3.9`
 
-_Prerequisites_
+**Prerequisites**
 
 fire and Questionary are python libraries that enable command line interfaces (CLI).
 Users can provide an input to the code by using CLI's when running the program:
@@ -45,12 +55,19 @@ pip install questionary
 
 ## Usage
 
-To use the application launch it from your shall/terminal/Git Bash. Once launched, a number of questions relating to the loan application will appear on the screen. Your answers to those questions will serve as filters the tool will apply to the list of loan providers.
+To use the application launch it from your terminal. <br />
+Once the app is launched, a number of questions relating to the loan application will appear on the screen. Your answers to those questions will serve as filters to the list of loan providers. <br />
 NOTE: the path requested by the prompt messages is to the data file containg the list of loan providers. <br />
 
-![terminal](images/Terminal.PNG)
+![terminal](images/Terminal_No.PNG)
 
-The tool will output to the screen debt-to-income ratio and loan-to-value ratio of the loan and a number of qualified providers found by allplying the filters, as well as the filtered list of qualifying providers saved in the same directory as the tool.
+The tool will output to the screen the debt-to-income and the loan-to-value ratios of the loan and the number of qualified providers found by applying the filters. <br />
+You will be asked if you would like to save the list of qualified providers. If you respond with a "yes" and there are qualified banks, the output will be saved in the location and the file (in .csv format) specified by you via a command line interface (CLI). <br />
+Some examples of CLI messages and responses are shown below: <br />
+
+![terminal](images/No_save.PNG) <br />
+![terminal](images/Terminal.PNG) <br />
+![terminal](images/Terminal_NoQualifying.PNG)
 
 ---
 
@@ -58,10 +75,10 @@ The tool will output to the screen debt-to-income ratio and loan-to-value ratio 
 
 Contact Details:
 
-Boris Dudkin:
+Boris Dudkin
 
 - [Email](boris.dudkin@gmail.com)
-- [LinkedIn](www.linkedin.com/in/Boris-Dudkin)
+- [LinkedIn](https://www.linkedin.com/in/Boris-Dudkin/)
 
 ---
 
