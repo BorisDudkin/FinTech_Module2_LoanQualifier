@@ -17,7 +17,7 @@ from qualifier.filters.loan_to_value import filter_loan_to_value
 from qualifier.filters.max_loan_size import filter_max_loan_size
 from qualifier.utils.calculators import (calculate_loan_to_value_ratio,
                                          calculate_monthly_debt_ratio)
-from qualifier.utils.fileio import load_csv
+from qualifier.utils.fileio import load_csv, save_csv
 
 
 def load_bank_data():
@@ -116,12 +116,14 @@ def save_qualifying_loans(qualifying_loans):
         if len(qualifying_loans) == 0:
             sys.exit("No qulifying loan providers available for this loan!")
         else:
-            csvpath = questionary.text("Enter a file path for the qualifying loans file:").ask()
-            csvpath = Path(csvpath)
-
-            with open(csvpath, "w", newline="") as csvfile:
-                csvwriter = csv.writer(csvfile, delimiter=',')
-                csvwriter.writerows(qualifying_loans)
+            no_path = True
+            while no_path:
+                csvpath = questionary.path("Path for the output file and the file name (in .csv format").ask()
+                if csvpath[-4:0] == ".csv":
+                    no_path = False
+                    save_csv(csvpath, qualifying_loans)
+                else:
+                    print("Incorrect file format. Save the file as .csv")
 
 
 
