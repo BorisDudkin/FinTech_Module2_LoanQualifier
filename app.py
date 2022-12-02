@@ -124,6 +124,7 @@ def save_qualifying_loans(qualifying_loans):
         if response == "No":
             sys.exit("No results will be saved!")
         else:
+            # while loop will run until a file with a .csv extension is provided
             no_path = True
             while no_path:
                 # Given that I have a list of qualifying loans, when I choose to save the loans, the tool should prompt for a file path to save the file.
