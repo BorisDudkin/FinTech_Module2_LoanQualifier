@@ -111,20 +111,26 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
-    response = questionary.select(
-    "Would you like to save the search results?",
-    choices=["Yes", "No"],).ask()
 
-    if response == "No":
-        sys.exit("No results will be saved!")
+    #  Given that I am using the loan qualifier CLI, when I run the qualifier, then the tool should prompt the user to save the results as a CSV file.
+    print("The results of the analysis have to be saved in the .csv format!")
+    
+    # Given that no qualifying loans exist, when prompting a user to save a file, then the program should notify the user and exit.
+    if len(qualifying_loans) == 0:
+        sys.exit("No qulifying loan providers available for this loan! No results will be saved!")
     else:
-        if len(qualifying_loans) == 0:
-            sys.exit("No qulifying loan providers available for this loan! Results will not be saved")
+        # Given that I have a list of qualifying loans, when I am prompted to save the results, then I should be able to opt out of saving the file.
+        response = questionary.select("Would you like to save the search results?", choices=["Yes", "No"],).ask()
+        if response == "No":
+            sys.exit("No results will be saved!")
         else:
             no_path = True
             while no_path:
-                csvpath = questionary.path("Path for the output file and the file name (in .csv format)").ask()
+                # Given that I am using the loan qualifier CLI, when I run the qualifier, then the tool should prompt the user to save the results as a CSV file.
+                csvpath = questionary.path("Insert a path for the output file and the file name (in .csv format):").ask()
+                #  Given that I am using the loan qualifier CLI, when I choose to save the loans, then the tool should save the results as a CSV file.
                 if csvpath[-4:] == ".csv":
+                    Path(csvpath)
                     no_path = False
                     save_csv(csvpath, qualifying_loans)
                 else:
