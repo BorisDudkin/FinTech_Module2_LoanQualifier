@@ -128,7 +128,7 @@ def save_qualifying_loans(qualifying_loans):
             no_path = True
             while no_path:
                 # Given that I have a list of qualifying loans, when I choose to save the loans, the tool should prompt for a file path to save the file.
-                csvpath = questionary.path("Choose the path for the output file including the file name (in .csv format):").ask()
+                csvpath = questionary.text("Choose the path for the output file including the file name (in .csv format):").ask()
                 #  Given that I am using the loan qualifier CLI, when I choose to save the loans, then the tool should save the results as a CSV file.
                 if csvpath[-4:] == ".csv":
                     Path(csvpath)
@@ -136,7 +136,7 @@ def save_qualifying_loans(qualifying_loans):
                     save_csv(csvpath, qualifying_loans)
                 else:
                     print("Incorrect file format. Save the file as .csv")  
-
+    print(f"The results of the analysis are saved under {csvpath}")
 
 def run():
     """The main function for running the script."""
