@@ -1,0 +1,17 @@
+* 	 (HEAD -> main, origin/main, origin/HEAD) the analysis output path added to app.py and README updated with a screen shot
+* 	 terminal history updated with the latest update to app.py
+* 	 save_qualifying_loans function updated: while loop commented
+* 	 README.md Usage section updated with new image. terminal_history re-run
+* 	 save_qualifying_loans function comments updated
+* 	 save_qualifying_loans function updated; README.md, images and terminal hisory files are updated accordingly
+* 	 terminal_history.txt re-run
+* 	 README.md Usage section updated
+* 	 terminal history generated and added
+* 	 README.md Usage section updated, new images added
+* 	 save_qualifying_loans function description augmented by adding a list of conditions
+* 	 fileio.py function save_csv updated with a header default values; app.py function save_qualifying_loans augmented with extra conditions for saving the output
+* 	 app.py function save_qualifying_loans updated and save_csv function added to fileio.py
+* 	 additional features added to save_qualifying_loans function
+* 	 save_qualifying_loans function initiated
+* 	 Initial upload of the starter files
+* 	 Initial commit
